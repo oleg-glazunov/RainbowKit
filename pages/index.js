@@ -28,14 +28,14 @@ export default function Home() {
       </Head> */}
 
       <ConnectButton
-				label="Connect Wallet" 
+				label="Connect Wallet"
 				accountStatus={"full"}
 				chainStatus={"none"}
 				showBalance={false}
 			/>
       <div>
         {/* {account.isConnected && `Account ${account.address} is now connected!`} */}
-        {mounted ? account.address && <p>Account ${account.address} is now connected!</p> : null}
+        {mounted ? account.address && <p>Account {account.address} is now connected!</p> : null}
       </div>
     </div>
   );
